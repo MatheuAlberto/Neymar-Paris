@@ -1,0 +1,34 @@
+.bordas:hover{
+    position: relative;
+
+}
+.bordas:hover::after, .bordas:hover::before{
+    content: "";
+    --angle: 0deg;
+    width: 100%;
+    height: 100% ;
+    padding: 3px;
+    border-radius: 4px;
+    background: conic-gradient(from var(--angle), transparent 20%, rgb(124, 20, 20));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    animation: borda 3s linear infinite;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.bordas:hover::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+/* O before não precisa ser criado, só por questão de elegancia mesmo, no entando já funciona sem ele */
+
+#menu > form > ul > li > a:hover{
+color: rgb(57, 57, 57);
+}
+

@@ -10,9 +10,10 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-.black{
+body{
     background-image: url(img.svg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     width: 100%;
@@ -44,11 +45,8 @@
     margin-top: 61px;
     text-align: right;
 }
-#opc > li {
-    display: inline-block;
-    list-style: none;
-}
-#opc > li > a{
+
+#opc> a{
     text-decoration: none;
     margin-left: 50px;
     font-family: 'Inter';
@@ -56,34 +54,45 @@
     font-size: 18px;
     line-height: 22px;
     color: #F9F9F9;
+    
 }
-#opc > li > a > span{
+#registro{
     padding: 12px 22px;
     background: #DA2535;   
     border-radius: 4px;
 }
+#ttt{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-bottom: 270px;
+}
 #main > h1{
-    margin-top: 110px;
     font-family: 'Inter';
     font-style: italic;
     font-weight: 700;
-    font-size: 78px;
+    font-size: 75pt;
     line-height: 94px;
     color: #F9F9F9;
 }
 #main > p{
-    margin-top: 18px;
     font-family: 'Inter';
     font-style: italic;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 23pt;
     line-height: 150%;
     color: #F9F9F9;
 }
-#main_a > li > a {
+#main_a{
+    margin-top: 48px;
     padding: 12px 22px;
-    background: #DA2535;   
+    background: #DA2535; 
+    text-align: center;  
+    width: 170px;
     border-radius: 4px;
+
+}
+#main_a > a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -93,17 +102,15 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-#main_a > li{
-    margin-top: 48px;
-    list-style: none;
-}
+
 #re{
-    margin-top: 375px;
     justify-content: center;
     align-items: center;
 }
 #re > .manto{
     margin: 0px 35px;
+
+    animation: giro 3s linear 2 alternate forwards;
 }
 #re > .times{
     font-family: 'Inter';
@@ -223,13 +230,13 @@ list-style: none;
     line-height: 24px;
     color: #0B1421;
 }
-#mais > li{ 
+#mais{ 
     margin-top: 64px;
     list-style: none;
     text-align: center;
     margin-bottom: 125px;
 }
-#mais > li > a{
+#mais > a{
     text-decoration: none;
     font-family: 'Inter';
     font-style: normal;
